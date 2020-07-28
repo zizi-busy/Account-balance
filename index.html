@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account Balance</title>
+    <link rel="stylesheet" href="local.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-container">
+                <div class="heading">
+                    <h4 class="name-header">Account Name: <span class="account-name" ></span></h4>   
+                    <h1> Account Balance <span class="currencyinput">€ <input class="account-balance" type: readonly> </h1>
+                    
+                </div>
+      
+                <div class="input-area">
+                   <form class="balance-form" action="">
+                    
+                        <input class="description" type="text" name="description"   placeholder="Description"  >
+                         <span  style="position: absolute; margin-left: 3px; margin-top: 4px; font-size: 15px; color: gray;">€</span><input class="theSum" type="text" pattern="-?[0-9]+[\,.]*[0-9]+ "step="any" name="sum" data-symbol="€" placeholder="">
+                        <select class="expType" name="expense type" >
+                                <option value="--Select--">--Select--</option>
+                                <option value="income">Income +</option>
+                                <option value="expense">Expense -</option>
+                                </select>
+                            
+                        <button class="addBtn">Add</button>
+
+                        <h5 class="warning"></h5>
+                        
+                    </form>
+                </div>
+        </header><!--container-->
+
+        <div class="finance-container">
+
+            <div class="incomes__container">
+                <table class =" inc-table">
+                    <thead>
+                        <tr>
+                        <th colspan="2">Income</th>
+                        </tr> 
+                    </thead>
+                    <tbody class="i-body"> 
+  
+                    </tbody> 
+                    <tfoot>
+                        <tr class= "total-inc">
+                            <td class="total-text">total</td>
+                            <td class ="total-in"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="exp__container">
+                <table class =" exp-table">
+                    <thead>
+                        <tr>
+                        <th colspan="2">Expenses</th>
+                        </tr>   
+                    </thead>
+                    <tbody class="e-Body">   
+                   
+                    </tbody> 
+                    <tfoot>
+                        <tr class= "total-exp">
+                            <td class="total-text">total</td>
+                            <td class ="total-ex"></td>
+                        </tr>
+                    </tfoot>
+                  
+                </table>
+             
+            </div>
+
+        </div>
+
+    </div><!--wrapper-->
+
+
+    <script src="acount-balance.js"> </script>
+        
+        
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+    
+    <script>
+        const personAccount = {
+    firstName: 'Mike',
+    lastName: 'Tyson',
+    incomes: [{
+            description: 'Salary',
+            amount: 4000
+        },
+        {
+            description: 'Prize',
+            amount: 5000
+        }
+    ],
+    expenses: [{
+            description: 'Rent',
+            amount: 900
+        },
+        {
+            description: 'Transport',
+            amount: 100
+        }
+    ],
+    addIncome: function () {
+        const description = prompt('Enter description: ')
+        const amount = Number(prompt('Enter amount: '))
+        this.incomes.push({
+            description,
+            amount
+        })
+    },
+    addExpense: function () {
+        const description = prompt('Enter description: ')
+        const amount = Number(prompt('Enter amount: '))
+        this.expenses.push({
+            description,
+            amount
+        })
+    },
+    totalIncome: function () {
+        const total = this.incomes.reduce((acc, curr) => {
+            return acc + curr.amount
+        }, 0)
+        return total
+    },
+    totalExpense: function () {
+        return this.expenses.reduce((acc, curr) => acc + curr.amount)
+    },
+    accountBalance: function () {
+        const balance = this.totalIncome() - this.totalExpense()
+        return balance
+    }
+}
+
+console.log (personAccount)
+
+    </script>
+</body>
+</html>

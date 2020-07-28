@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1.42;
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  /* to smooth fonts */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+ 
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("pic5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+
+  background-size: cover;
+  
+
+
+  color: #fff;
+  z-index: 1;
+ 
+}
+
+.header-container {
+ 
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+  0 3px 6px rgba(0, 0, 0, 0.23);
+-moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+-ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+-o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.heading {
+  padding: 0px;
+  margin: 20px auto;
+}
+
+h1{
+    font-size: 20px;
+}
+
+h5{
+ 
+  display: flex ;
+  justify-content: center;
+  margin-top: 20px;
+  color:#d4ff55;
+}
+
+.account-name {
+  color: #d4ff55;
+  padding-left: 10px;
+
+}
+.name-header {
+  margin-bottom: 30px;
+  display: flex ;
+  justify-content: center;
+}
+
+
+
+/*****INPUT*************************************/
+.input-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+  margin-top: 2rem;
+  letter-spacing: 2.5;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 50px;
+}
+
+input {
+  font-family: "Roboto Mono", monospace;
+  width: 150px;
+  height: 35px;
+  padding: 5px;
+  border: none;
+    outline: none;
+    padding-left: 8px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+
+   
+}
+
+.description {
+  width: 200px;
+}
+
+.theSum{
+  padding-left: 14px;
+}
+
+.input-symbol-euro {
+  position: relative;
+}
+.input-symbol-euro input {
+  padding-left:18px;
+}
+.input-symbol-euro:before {
+  position: absolute;
+  top: 0;
+  content:"€";
+  left: 5px;
+}
+
+select {
+  font-family: "Roboto Mono", monospace;
+  width: 150px;
+  height: 35px;
+  padding: 5px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+}
+/*****BUTTON*************************/
+button {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  height: 35px;
+  width: 60px;
+  border: none;
+  cursor: pointer;
+  background-color:#FF1493; 
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+
+}
+.addBtn{
+  font-family: "Roboto Mono", monospace;
+  
+}
+
+button:hover {
+ 
+
+  background: linear-gradient(to bottom, #FF1493 5%, 	#FFC0CB 100%);
+ 
+  color:white;
+ 
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  width: 250px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  
+}
+/********FINANCE CONTAINER*************/
+
+.finance-container{
+  display: flex;
+  justify-content: space-between;
+ flex-direction: row;
+
+  
+  
+  width: 100%;
+
+}
+
+.exp__container,
+.incomes__container{
+  margin : 30px;
+  width: 50%;
+  height: 500px;
+ 
+  display: flex;
+ 
+ 
+  
+  flex-direction: column;
+  align-content: center;
+padding: 10px;
+-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+
+/**********Tables********/ 
+
+tr:nth-child(even) {
+  background-color: #efefef ;
+  
+
+}
+ td{
+padding: 10px 13px 10px 30px ;
+ 
+}
+
+
+th{
+  padding: 7px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 90%;
+  border-bottom: 2px solid #111111;
+  border-top: 1px solid #999 ;
+  align-content: center;
+
+}
+
+
+.total-text{
+  color:#FF1493;
+  
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+ 
+
+  
+}
+tr:hover{
+  background-color: #c3e6e5;
+}
+
+
+ 
+.income {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.delete-eBtn,
+.delete-iBtn{
+  background-color: #d4ff55;
+  color:black;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+}
+.total-in,
+.total-ex {
+ color: #FF1493; ;
+}
+.total-inc{
+  border-top: 2px solid #111111;
+  border-bottom: 1px solid #999 ;
+  
+}
